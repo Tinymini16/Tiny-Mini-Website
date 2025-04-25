@@ -1,0 +1,173 @@
+<html>
+<head>
+<style>
+        .menu-toggle {
+            font-size: 15px;
+            padding: 15px;
+            cursor: pointer;
+            background-color:#f7d5dc;
+            color:#4b2c35;
+            border: none;
+            position: fixed;
+            top: 3px;
+            left: 1px;
+            z-index: 1000;
+        }
+        .sidebar {
+            width: 250px;
+            height: 100vh;
+            background-color:#b8e2f2;
+            padding: 15px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            left: -250px;
+            top: 0;
+            transition: left 0.3s ease;
+        }
+        .sidebar.open {
+            left: 0;
+        }
+        .sidebar h2 {
+            margin-top: 0;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            padding: 10px;
+            border-bottom: 1px solid #000000;
+        }
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #000000;
+            display: block;
+        }
+
+     
+    body {
+      margin: 0;
+    }
+
+    section {
+      padding: 100px;
+    }
+
+.home-button {
+      padding: 12px 24px;
+      background-color: #808080;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .home-button:hover {
+      background-color: #2980b9;
+      transform: scale(1.05);
+    }
+
+</style>
+
+</head>
+<body bgcolor="#b8e2f2">
+
+    
+
+
+
+<div style="
+    background-color:#f7d5dc;
+    height: 80px;
+    width: 100vw;              
+    position: fixed;            
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  ">
+
+   <img src="logo.png" hight="60px" width="60px" hspace="60" vspace="5">
+
+<font size="7" align="left">Tiny mini</font>
+</div>
+
+  
+  <div style="height: 36px;"></div>
+
+<header>
+
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <div class="sidebar" id="sidebar">
+        
+        <ul><br><br><br>
+            <li><a href="toy.html">Toy</a></li>
+            <li><a href="zulla.html">Zulla</a></li>
+            <li><a href="bath towal.html">Bath Towel</a></li>
+            <li><a href="woker.html">Walker</a></li>
+            <li><a href="godadi.html">Godadi</a></li>
+            <li><a href="grooming.html">Baby Accesories</a></li>
+            <li><a href="girlcloth.html">Girl Cloths</a></li>
+            <li><a href="boycloth.html">Boy Cloths</a></li>
+            <li><a href="milkbotle.html">Milk Bottel</a></li>     
+       </ul>
+    </div>
+    
+    <script>
+        function toggleMenu() {
+            document.getElementById('sidebar').classList.toggle('open');
+        }
+    </script>
+
+</header>   
+
+   
+
+
+
+
+
+
+<table width="50%" height="auto" align="center"   cellspacing="50"  cellpadding="5">
+<tr>
+
+
+<td  height="auto" width="50%" align="center" valign="top" bgcolor="#ffffff">
+<img src="1 (44).png" width="60%" height="auto" ><br>
+
+<font size="5" >Portable Baby Cradle(circle)<br><br>
+M.R.P: ₹1700<br><br></font>
+
+<form>
+<input type="button" name="a" value="Add to cart" align="center" style="background-color: orange; color: white; border-style:none;">
+</form>
+
+</td>
+
+
+<td  height="auto" width="50%" align="center" valign="top" bgcolor="#ffffff">
+<img src="1 (45).png" width="60%" height="auto" ><br>
+
+<font size="5" >Portable Baby Cradle(square)<br><br>
+M.R.P: ₹1500<br><br></font>
+
+<form>
+<input type="button" name="a" value="Add to cart" align="center" style="background-color: orange; color: white; border-style:none;">
+</form>
+
+</td>
+
+
+</tr>
+
+
+</table>
+
+<center><a href="index.html" class="home-button">Go to Home</a></center>
+
+
+</body>
+</html>

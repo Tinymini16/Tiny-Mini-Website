@@ -1,0 +1,293 @@
+<html>
+<head>
+<style>
+        .menu-toggle {
+            font-size: 15px;
+            padding: 15px;
+            cursor: pointer;
+            background-color:#f7d5dc;
+            color:#4b2c35;
+            border: none;
+            position: fixed;
+            top: 3px;
+            left: 1px;
+            z-index: 1000;
+        }
+        .sidebar {
+            width: 250px;
+            height: 100vh;
+            background-color:#b8e2f2;
+            padding: 15px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            left: -250px;
+            top: 0;
+            transition: left 0.3s ease;
+        }
+        .sidebar.open {
+            left: 0;
+        }
+        .sidebar h2 {
+            margin-top: 0;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            padding: 10px;
+            border-bottom: 1px solid #000000;
+        }
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #000000;
+            display: block;
+        }
+
+     
+    body {
+      margin: 0;
+    }
+
+    section {
+      padding: 100px;
+    }
+
+
+</style>
+
+</head>
+<body bgcolor="#b8e2f2">
+
+  <div style="
+    background-color:#f7d5dc;
+    height: 80px;
+    width: 100vw;              
+    position: fixed;            
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  ">
+
+   <img src="logo.png" hight="60px" width="60px" hspace="60" vspace="5">
+
+<font size="20px" align="left">Tiny mini</font>
+
+
+    <div style="
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      font-size:25px;
+      transform: translateX(-50%); ">
+      <a href="index.html" style="color:#4b2c35; text-decoration: none; margin: 0 15px;">Home</a>
+      <a href="#Categories" style="color:#4b2c35; text-decoration: none; margin: 0 15px;">Service</a>
+      <a href="#aboutus" style="color:#4b2c35; text-decoration: none; margin: 0 15px;">About</a>
+      <a href="#Contact" style="color:#4b2c35; text-decoration: none; margin: 0 15px;">Contact</a>
+    </div>
+
+  </div>
+
+  
+  <div style="height: 36px;"></div>
+
+
+
+
+<br><br><br>
+
+
+<header>
+
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <div class="sidebar" id="sidebar">
+        
+        <ul><br><br><br>
+            <li><a href="toy.html">Toy</a></li>
+            <li><a href="zulla.html">Zulla</a></li>
+            <li><a href="bath towal.html">Bath Towel</a></li>
+            <li><a href="woker.html">Walker</a></li>
+            <li><a href="godadi.html">Godadi</a></li>
+            <li><a href="grooming.html">Baby Accesories</a></li>
+            <li><a href="girlcloth.html">Girl Cloths</a></li>
+            <li><a href="boycloth.html">Boy Cloths</a></li>
+            <li><a href="milkbotle.html">Milk Bottel</a></li>     
+       </ul>
+    </div>
+    
+    <script>
+        function toggleMenu() {
+            document.getElementById('sidebar').classList.toggle('open');
+        }
+    </script>
+
+</header>   
+
+
+ 
+
+
+
+
+
+<center>
+<img src="welcome.png" width="60%" height="auto"><br><br><br><br>
+</center>
+<section id=Categories>
+
+<center><font face="arial" size="13">Categories</font>
+</center><br><br>
+
+
+</section>
+
+
+
+
+
+
+<center>
+<img src="1.png" alt="baby toy" usemap="#toy" width="30%" height="auto">
+<map name="toy">
+    <!-- Full Image Clickable -->
+    <area shape="rect" coords="0,0,1536,1024" href="toy.html" alt="Full Image">
+    
+    <!-- Bottom Right Area (Prevent Click) -->
+    <area shape="rect" coords="1200,800,1536,1024" nohref alt="No Click">
+    <br>
+<font size="9">Toy</font><br><br><br>
+</center>
+
+
+<center>
+<img src="2.png" alt="baby zulla" usemap="#zulla" width="30%" height="auto" align="center">
+<map name="zulla">
+    <!-- Full Image Clickable -->
+    <area shape="rect" coords="0,0,1536,1024" href="zulla.html" alt="Full Image">
+    
+    <!-- Bottom Right Area (Prevent Click) -->
+    <area shape="rect" coords="1200,800,1536,1024" nohref alt="No Click">
+    <br>
+<font size="9">Zulla</font><br><br><br>
+</center>
+
+<center>
+<img src="3.png" alt="baby bath towal " usemap="#bath towal" width="30%" height="auto">
+<map name="bath towal">
+    <!-- Full Image Clickable -->
+    <area shape="rect" coords="0,0,1536,1024" href="bath towal.html" alt="Full Image">
+    
+    <!-- Bottom Right Area (Prevent Click) -->
+    <area shape="rect" coords="1200,800,1536,1024" nohref alt="No Click">
+    <br>
+<font size="9">Bath Towel</font><br><br><br>
+</center>
+
+<center>
+<img src="4.png" alt="baby woker" usemap="#woker" width="30%" height="auto">
+<map name="woker">
+    <!-- Full Image Clickable -->
+    <area shape="rect" coords="0,0,1536,1024" href="woker.html" alt="Full Image">
+    
+    <!-- Bottom Right Area (Prevent Click) -->
+    <area shape="rect" coords="1200,800,1536,1024" nohref alt="No Click">
+    <br>
+<font size="9">Walker</font><br><br><br>
+</center>
+
+<center>
+<img src="5.png" alt="baby godadi" usemap="#godadi" width="30%" height="auto">
+<map name="godadi">
+    <!-- Full Image Clickable -->
+    <area shape="rect" coords="0,0,1536,1024" href="godadi.html" alt="Full Image">
+    
+    <!-- Bottom Right Area (Prevent Click) -->
+    <area shape="rect" coords="1200,800,1536,1024" nohref alt="No Click">
+    <br>
+<font size="9">Godadi</font><br><br><br>
+</center>
+
+<center>
+<img src="6.png" alt="baby grooming" usemap="#grooming" width="30%" height="auto">
+<map name="grooming">
+    <!-- Full Image Clickable -->
+    <area shape="rect" coords="0,0,1536,1024" href="grooming.html" alt="Full Image">
+    
+    <!-- Bottom Right Area (Prevent Click) -->
+    <area shape="rect" coords="1200,800,1536,1024" nohref alt="No Click">
+    <br>
+<font size="9">Baby Accesories</font><br><br><br>
+</center>
+
+<center>
+<img src="7.png" alt="baby girlcloth" usemap="#girlcloth" width="30%" height="auto">
+<map name="girlcloth">
+    <!-- Full Image Clickable -->
+    <area shape="rect" coords="0,0,1536,1024" href="girlcloth.html" alt="Full Image">
+    
+    <!-- Bottom Right Area (Prevent Click) -->
+    <area shape="rect" coords="1200,800,1536,1024" nohref alt="No Click">
+    <br>
+<font size="9">Girl Cloths</font><br><br><br>
+</center>
+
+<center>
+<img src="8.png" alt="baby boycloth" usemap="#boycloth" width="30%" height="auto">
+<map name="boycloth">
+    <!-- Full Image Clickable -->
+    <area shape="rect" coords="0,0,1536,1024" href="boycloth.html" alt="Full Image">
+    
+    <!-- Bottom Right Area (Prevent Click) -->
+    <area shape="rect" coords="1200,800,1536,1024" nohref alt="No Click">
+    <br>
+<font size="9">Boy Cloths</font><br><br><br>
+</center>
+
+<center>
+<img src="9.png" alt="baby milkbotle" usemap="#milkbotle" width="30%" height="auto">
+<map name="milkbotle">
+    <!-- Full Image Clickable -->
+    <area shape="rect" coords="0,0,1536,1024" href="milkbotle.html" alt="Full Image">
+    
+    <!-- Bottom Right Area (Prevent Click) -->
+    <area shape="rect" coords="1200,800,1536,1024" nohref alt="No Click">
+    <br>
+<font size="9">Milk Bottel</font><br><br><br>
+</center><br><br>
+
+
+
+
+
+ 
+<section id=aboutus>
+<center><font face="arial" size="13">About us</font>
+</center><br><br>
+
+<font size="5" >
+Tiny Mini Kidswear is a Vadodara-based kids' clothing store specializing in trendy, comfortable, and high-quality outfits for newborns to 10-year-olds. Whether it’s for everyday wear, festive occasions, birthday parties, or special events – we have the perfect outfits to dress your kids in style.<br>
+
+At Tiny Mini Kidswear, we believe in offering top-notch quality at affordable prices. Our collection is carefully selected to ensure both fashion and comfort for your child.<br>
+
+We also accept online orders, so you can shop easily from the comfort of your home and have your favorites delivered to your doorstep.<br>
+
+</font>
+</section>
+
+
+
+
+
+<section id=Contact>
+<center><font face="arial" size="13">Contact</font><br><font size="6">
+📞 Phone: +91 8905016892<br>
+        📧 Email: sapra.sapna168@gmail.com<br>
+        📍 Address: 4-B, Vidhyadham Society, Near Devarsh Hospital, New Sama Road,  Vadodara.</font>
+</center><br><br>
+
+</section>
+
+
+
+</body>
+</html>
